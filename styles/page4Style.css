@@ -1,0 +1,62 @@
+#box4{
+    background-color: cadetblue;
+}
+li{
+    color: white;
+    margin-left: 38%;
+}
+
+#mainTitles{
+  padding-bottom: 25%;
+  margin-top: 0.2%;
+  background-attachment: fixed;
+  height: 600px;
+  
+
+
+  
+
+}
+#mainTitles h2{
+    width: 20%;
+    border-radius: 20px;
+    height: 200px;
+
+
+}
+#mainTitles h2:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+    color: white;
+    border-color: white;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+ .selected_true{
+    background-color: white;
+    color: cadetblue;
+    border: 4px solid cadetblue;
+}
+ .selected_false {
+    background-color: cadetblue;
+    color: white;
+    border: 4px solid white         ;
+    
+}
+
+.image1{
+    background-image: url(https://images.alphacoders.com/581/581842.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    
+    
+}
+.image2{
+    background-image: url(https://wallpaperaccess.com/full/1134533.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}

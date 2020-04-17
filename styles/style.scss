@@ -1,0 +1,119 @@
+$marginOut: 0px 0px 0px;
+$mainFont: Arial, Helvetica, sans-serif;
+$mainSiteColor: cadetblue;
+$secondSiteColor: white;
+$thirdSiteColor: gray;
+$tableBorderCaracteristics: 5px solid $mainSiteColor;
+%animation{
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+%linkMainDesign{
+    text-decoration: none;
+}
+%titleDecoration{
+    text-align: center;
+    padding-top: 1px;
+}
+
+
+#titleHeader{
+    height: 50px;
+    background-color: $mainSiteColor;
+    margin-bottom: 0.2%;
+    h1{
+        @extend %titleDecoration;
+        font-family: $mainFont;
+        color: $secondSiteColor;
+        
+    }
+}
+
+ 
+
+
+
+#pagesMenu{
+    background-color: transparent;
+    a, a:hover{
+        @extend %linkMainDesign;
+        text-transform: capitalize;
+        
+    }
+    table{
+       /* border-top: $tableBorderCaracteristics;
+        border-right: $tableBorderCaracteristics;
+        border-left: $tableBorderCaracteristics;
+        border-bottom: $tableBorderCaracteristics;*/
+        width: 100%;
+        border-collapse: separate;
+       
+      
+
+    }
+    
+    .notChosed{
+        background-color: $secondSiteColor;
+        color: $mainSiteColor;
+    }
+    .chosed{
+        color: $secondSiteColor;
+        background-color: $mainSiteColor;
+    }
+
+    th{
+        /*border: 1.5px solid $mainSiteColor;*/
+        margin: $marginOut;
+        padding: 7px;
+        text-align: center;
+        size: 20px;
+    }
+    th:hover{
+        @extend %linkMainDesign;
+        @extend %animation;
+        background-color: deepskyblue;
+
+        a{
+            @extend %linkMainDesign;
+            @extend %animation;
+            background-color: deepskyblue;
+            color: $secondSiteColor;
+            
+        }
+            
+
+            
+            
+        }
+    }
+        
+    
+    
+
+body, h1{
+    margin: $marginOut;
+}
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, label::selection, a::selection{
+    background-color: $thirdSiteColor;
+    color: $secondSiteColor;
+}
+
+section{
+    h2{
+        @extend %titleDecoration;
+        font-family: $mainFont;
+        color: $mainSiteColor;
+        margin-top: 2.3%;
+    }
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+        
+        width: 45%;
+        margin-left: 10%;
+        padding-left: 20%;
+      }
+    
+ 
+}
