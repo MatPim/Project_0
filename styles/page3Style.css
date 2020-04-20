@@ -1,3 +1,31 @@
 #box3{
     background-color: cadetblue;
 }
+
+.images{
+    margin-top: 0px;
+    margin-top: 1.8%;
+}
+img{
+    margin-top: 0px;
+    height: 200px;
+    width: 200px;
+}
+.imagesSelecteds{
+    padding: 2px;
+    margin: 0px;
+}
+
+#text1{
+    margin-top: 6%;
+    background-color: cadetblue;
+    margin-right: 45%;
+    height: 360px;
+}
+#text2{
+    margin-top: 3%;
+    background-color: cadetblue;
+    margin-left: 45%;
+    height: 360px;
+    margin-bottom: 5%;
+}  
